@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Metadata</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>API Project: File Metadata Microservice</h2>
+      <h3>Usage:</h3>
+      <p>Please upload a File...</p>
+      <div class="view">
+        <h4 id="output"></h4>
+        <form
+          action="/api/fileanalyse"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input title="Upload File" type="file" name="upfile" id="upfile" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+        <p>
+            by
+            <a href="https://bit.ly/didierganthier">Didier Ganthier</a>
+        </p>
+    </div>
+  </body>
+</html>
